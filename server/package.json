@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node index.js"
+    "start": "node $PROJECT_PATH/index.js"
   },
   "dependencies": {
     "@google-cloud/translate": "^8.0.2",
