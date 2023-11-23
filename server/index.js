@@ -7,8 +7,9 @@ const app = express();
 //Cors permitindo acesso ao consumo das APIS...
 app.use(cors({
     credentials: true,
+    optionsSuccessStatus: 200,
     //Trocar origin de acordo com a url do FRONT-END...
-    origin: ['http://localhost:3000', 'http://192.168.100.2:3000', 'https://destino-verde.vercel.app']
+    origin: 'https://destino-verde.vercel.app'
 }));
 
 const cookieParser = require('cookie-parser');
