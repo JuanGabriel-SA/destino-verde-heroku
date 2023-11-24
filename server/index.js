@@ -9,7 +9,7 @@ app.use(cors({
     credentials: true,
     optionsSuccessStatus: 200,
     //Trocar origin de acordo com a url do FRONT-END...
-    origin: 'https://destino-verde.vercel.app'
+    origin: ['https://destino-verde.vercel.app', 'http://localhost:3000']
 }));
 
 const cookieParser = require('cookie-parser');
